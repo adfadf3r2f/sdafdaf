@@ -16,5 +16,5 @@ RUN curl -L https://github.com/gngpp/ninja/releases/download/v0.9.26/ninja-0.9.2
 EXPOSE 7999
 
 
-CMD ["ninja", "run", "--enable-webui", "--arkose-endpoint", "https://asdfdfs.zeabur.app"]
+CMD ["ninja", "run", "--enable-webui", "--arkose-endpoint", "https://asdfdfs.zeabur.app"] 
 
