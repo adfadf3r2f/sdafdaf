@@ -11,11 +11,11 @@ RUN apk update && apk add --no-cache curl tar
 RUN curl -L https://github.com/gngpp/ninja/releases/download/v0.9.26/ninja-0.9.26-x86_64-unknown-linux-musl.tar.gz | tar zx \
     && mv ninja /bin/ninja
 
-
+COPY serve.toml /app/serve.toml
 
 # 暴露容器内部使用的端口
 EXPOSE 7999
 
 
-CMD ["ninja", "run"]
+CMD ["ninja", "run", "-C", "/app/serve.toml"]
 
