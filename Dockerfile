@@ -10,6 +10,7 @@ RUN version=$(basename $(curl -sL -o /dev/null -w %{url_effective} https://githu
 
 ENV LANG=en_US.UTF-8 DEBIAN_FRONTEND=noninteractive LANGUAGE=en_US.UTF-8 LC_ALL=C
 
+EXPOSE 7999
 RUN cp ninja /bin/ninja
 RUN mkdir /.ninja && chmod 777 /.ninja
 
