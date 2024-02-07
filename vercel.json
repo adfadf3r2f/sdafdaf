@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "name": "my-ninja-app",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.js"
+    }
+  ],
+  "env": {
+    "ARKOSE_ENDPOINT": "https://asdfdfs.zeabur.app"
+  },
+  "build": {
+    "env": {
+      "NINJA_VERSION": "0.9.26"
+    }
+  }
+}
